@@ -5,7 +5,7 @@
   background-color: #131921;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
 }
 
 span {
@@ -20,7 +20,10 @@ span {
 }
 
 .header__logo {
-  width: 2rem;
+  width: auto;
+  height: auto;
+  max-height: 2rem;
+  border-radius: 50%;
   object-fit: contain;
   cursor: pointer;
   margin: 0 10px;

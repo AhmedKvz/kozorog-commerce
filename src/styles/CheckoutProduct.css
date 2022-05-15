@@ -1,0 +1,15 @@
+.chekout__product {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.checkout__product_image {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+
+.checkout__product_info {
+  padding-left: 1rem;
+}
