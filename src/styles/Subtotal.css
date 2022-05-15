@@ -1,0 +1,9 @@
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cd9042;
+  background-color: black;
+  color: white;
+}
