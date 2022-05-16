@@ -78,6 +78,7 @@ function Login() {
 
             <div className="register__form">
               <h5>Don't have an account?</h5>
+              <h5>E-mail</h5>
               <input
                 type="text"
                 placeholder="register your email"

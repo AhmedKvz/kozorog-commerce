@@ -6,7 +6,7 @@ import SoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../services/StateProvider";
 import { auth } from "../services/firebase";
-function Header() {
+function Header(props) {
   const [{ basket, user }] = useStateValue();
 
   const handleAuthentication = () => {
@@ -43,10 +43,6 @@ function Header() {
           <span className="header__otpionLineTwo">Orders</span>{" "}
         </div>
 
-        <div className="header__option">
-          <span className="header__otpionLineOne">Your</span>
-          <span className="header__otpionLineTwo">Kozorog</span>
-        </div>
         <Link to={"/checkout"}>
           <div className="header__optionBasket">
             <SoppingBasketIcon />

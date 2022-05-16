@@ -36,13 +36,13 @@ function Home() {
               src={Video}
               alt="Video.jpg"
             />
+            <button
+              className="product__shop_scroll"
+              onClick={() => scrollToRef.current.scrollIntoView()}
+            >
+              SHOP NOW
+            </button>
           </div>
-          <button
-            className="product__shop_now"
-            onClick={() => scrollToRef.current.scrollIntoView()}
-          >
-            SHOP NOW
-          </button>
         </div>
 
         <div className="home__shopping_area">
@@ -51,7 +51,7 @@ function Home() {
               id={1}
               image={image_1}
               title="Longhorn Skull"
-              productName=" White Storm"
+              productName=" White Cocaine"
               price={649}
             />
             <Product
