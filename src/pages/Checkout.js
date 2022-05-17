@@ -4,7 +4,7 @@ import "../styles/Checkout.css";
 import { useStateValue } from "../services/StateProvider";
 import CheckoutProduct from "../components/CheckoutProduct";
 import Header from "../components/Header";
-
+import Footer from "../components/Footer";
 function Checkout() {
   const [{ basket, user }] = useStateValue();
 

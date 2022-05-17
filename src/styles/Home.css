@@ -69,6 +69,7 @@
   width: 100%;
   margin: auto;
   place-items: center;
+  background-color: white;
 }
 
 .exceptional__image {

@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import Header from "../components/Header";
 import Transparent from "../images/Transparent.png";
 import Video from "../images/Video.mp4";
+import Footer from "../components/Footer";
 import Product from "../components/Product";
 import image_1 from "../images/image_1.jpg";
 import image_2 from "../images/image_2.jpg";
@@ -11,8 +12,9 @@ import image_4 from "../images/image_4.jpg";
 import image_5 from "../images/image_5.jpg";
 import image_6 from "../images/image_6.jpg";
 import image_7 from "../images/image_7.jpg";
-import image_8 from "../images/image_8.jpg";
+import image_8 from "../images/image_9.png";
 import image_9 from "../images/image_9.jpg";
+
 // import image_10 from "../images/image_10.jpg";
 function Home() {
   const scrollToRef = useRef();
@@ -50,22 +52,22 @@ function Home() {
             <Product
               id={1}
               image={image_1}
-              title="Longhorn Skull"
-              productName=" White Cocaine"
+              title="Hand-Carved Longhorn Skull"
+              productName=" Grey Cocaine"
               price={649}
             />
             <Product
               id={2}
               image={image_2}
-              title="Carved Ram Skull"
-              productName=" Black Boho"
+              title="Standard Longhorns"
+              productName=" Trapper"
               price={649}
             />
             <Product
               id={3}
               image={image_3}
               title="Longhorn Skull"
-              productName=" White Storm"
+              productName=" Black Magic"
               price={649}
             />
           </div>
@@ -73,22 +75,22 @@ function Home() {
             <Product
               id={4}
               image={image_4}
-              title="Longhorn Skull"
-              productName=" White Storm"
-              price={649}
+              title="Standard Longhorns"
+              productName="Trapper"
+              price={439}
             />
             <Product
               id={5}
               image={image_5}
               title="Carved Ram Skull"
-              productName=" Black Boho"
+              productName=" White Boho"
               price={649}
             />
             <Product
               id={6}
               image={image_6}
-              title="Longhorn Skull"
-              productName=" White Storm"
+              title="Hand-Carved Ram Skull"
+              productName="Black Boho"
               price={649}
             />
           </div>
@@ -103,8 +105,8 @@ function Home() {
             <Product
               id={8}
               image={image_8}
-              title="Carved Ram Skull"
-              productName=" Black Boho"
+              title="Carved Cow Skull"
+              productName=" White Mandala"
               price={649}
             />
             <Product
@@ -129,6 +131,7 @@ function Home() {
           Scroll top top
         </button>
       </div>
+      <Footer />
     </>
   );
 }

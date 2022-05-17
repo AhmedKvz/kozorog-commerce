@@ -30,7 +30,7 @@ span {
 }
 
 .header__searchIcon {
-  background-color: #cd9042;
+  background-color: white;
   height: 22px !important;
   cursor: pointer;
 }
@@ -57,6 +57,10 @@ span {
   padding: 10px;
 }
 
+.header__wrapper {
+  display: flex;
+}
+
 .header__otpionLineOne {
   font-size: 9px;
 }
@@ -76,4 +80,84 @@ span {
 .header__basketCount {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+}
+
+#hidden {
+  display: flex;
+}
+
+.nav__menu > button {
+  display: none;
+}
+
+.menu__icon {
+  width: 40px;
+  max-height: 100%;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .header__search {
+    width: 100%;
+  }
+
+  .header__logo {
+    margin: 0 10px;
+  }
+
+  .header__nav {
+    flex-direction: column;
+  }
+
+  .header__option {
+    width: 100%;
+    padding: 0;
+  }
+
+  .header__optionBasket {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav__menu > button {
+    display: flex;
+  }
+
+  .nav__menu ul {
+    display: none;
+  }
+
+  .header__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .header__wrapper .header__otpionLineOne {
+    margin: 5px;
+  }
+
+  #hidden {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    height: 100px;
+    width: 100%;
+    background-color: #3c3c3c;
+    flex-direction: column;
+    opacity: 0.9;
+    transition: 0.5s ease-in;
+  }
+
+  .header__searchIcon {
+    margin-right: 5px;
+  }
 }

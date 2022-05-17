@@ -27,7 +27,9 @@ function CheckoutProduct({ id, image, title, price }) {
           <small>$</small>
           <strong>{price}</strong>
         </p>
-        <button onClick={removeFromBasket}>Remove from Basket</button>
+        <button className="checkout__product_btn" onClick={removeFromBasket}>
+          Remove from Basket
+        </button>
       </div>
     </div>
   );
